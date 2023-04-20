@@ -1,0 +1,10 @@
+version: '3.4' #指定docker-compose文件的版本，这里使用的是3.4版。
+
+services:
+  dockerdebugtest02:
+    image: dockerdebugtest02
+    build:
+      context: . #指定构建上下文的路径，这里是当前目录（项目根目录）。
+      dockerfile: ./Dockerfile
+    ports:
+      - 5002:5002
