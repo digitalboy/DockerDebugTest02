@@ -17,3 +17,4 @@ services:
     # 定义环境变量 FLASK_APP，指定 Flask 应用程序的入口模块为 app.py
     environment:
       - FLASK_APP=-m app.py
+    # -m 是 Python 命令行参数的一种，表示要导入并执行一个 Python 模块。在这里，FLASK_APP=-m app.py 中的 -m 表示要导入并执行 app.py 这个模块作为 Flask 应用程序的入口点。也就是说，通过 FLASK_APP=-m app.py 设置环境变量，告诉 Flask 在启动时要加载 app.py 这个模块，并将其作为应用程序对象。
